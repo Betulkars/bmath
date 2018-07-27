@@ -1,6 +1,6 @@
 def asalMi(sayi):
     tamBolenler = []
-    for i in range(2, int(int(sayi) // 2) + 1):
+    for i in range(2, int(sayi // 2) + 1):
         if (sayi % i == 0):
             tamBolenler.append(i)
             return tamBolenler
