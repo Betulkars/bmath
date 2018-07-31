@@ -8,7 +8,7 @@ else:
     tektrnkişrtvarmi=False
     tırnakiştvarmi=False
     boslukvarmi=False
-    zorunlukrkyokmu=False
+    zorunlukrkyokmu=True
     büyükharfyokmu=True
     küçükharfyokmu=True
     sayiyokmu=True
@@ -25,7 +25,7 @@ else:
         if karakter == "`":
             terstrnakişrtvarmi=True
         if karakter != "!" or karakter !="@" or karakter!=  "#"  or karakter != "$" or karakter != "%" or karakter!= "^" or karakter!= "&":
-            zorunlukrkyokmu=True
+            zorunlukrkyokmu=False
         if karakter.islower():
             büyükharfyokmu=False
             # k+=1
