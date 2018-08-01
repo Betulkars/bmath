@@ -18,7 +18,7 @@ else:
     for karakter in password:
         if karakter == ' ':
             boslukvarmi=True
-        if karakter ==' " ':
+        if karakter =='"':
             tırnakiştvarmi=True
         if karakter == "'":
             tektrnkişrtvarmi=True
