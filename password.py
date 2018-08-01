@@ -24,7 +24,7 @@ else:
             tektrnkişrtvarmi=True
         if karakter == "`":
             terstrnakişrtvarmi=True
-        if karakter != "!" or karakter !="@" or karakter!=  "#"  or karakter != "$" or karakter != "%" or karakter!= "^" or karakter!= "&":
+        if karakter == "!" or karakter =="@" or karakter==  "#"  or karakter == "$" or karakter == "%" or karakter== "^" or karakter== "&":
             zorunlukrkyokmu=False
         if karakter.islower():
             büyükharfyokmu=False
