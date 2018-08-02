@@ -18,13 +18,13 @@ else:
     for karakter in password:
         if karakter == ' ':
             boslukvarmi=True
-        if karakter ==' " ':
+        if karakter =='"':
             tırnakiştvarmi=True
         if karakter == "'":
             tektrnkişrtvarmi=True
         if karakter == "`":
             terstrnakişrtvarmi=True
-        if karakter != "!" or karakter !="@" or karakter!=  "#"  or karakter != "$" or karakter != "%" or karakter!= "^" or karakter!= "&":
+        if karakter == "!" or karakter =="@" or karakter==  "#"  or karakter == "$" or karakter == "%" or karakter== "^" or karakter== "&":
             zorunlukrkyokmu=True
         if karakter.islower():
             büyükharfyokmu=False
