@@ -1,10 +1,14 @@
-m1=[[1,2],[4,5],[7,8],[1,2],[0,1]]
-m2=[[9,8],[6,5],[3,2],[1,2],[0,1]]
+m1=[[12, 7, 3],
+     [4, 5, 6],
+     [7, 8, 9]]
+m2=[[5, 8, 1, 2],
+     [6, 7, 3, 0],
+     [4, 5, 9, 1]]
 m3=[]
 for i in range(len(m1)):
-    m_satir=[]
-    for j in range(len(m2[0])):
-        # m1[i][j]+m2[i][j]
-        m_satir.append(m1[i][j]+m2[i][j])
-    m3.append(m_satir)
-print(m3)
+   for j in range(len(m2[0])):
+       for k in range(len(m2)):
+           m3[i][j]+=m1[i][k]+m2[k][j]
+
+for s in m3:
+    print(s)
