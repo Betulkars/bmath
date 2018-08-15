@@ -4,11 +4,18 @@ m1=[[12, 7, 3],
 m2=[[5, 8, 1, 2],
      [6, 7, 3, 0],
      [4, 5, 9, 1]]
-m3=[]
+çarpım=[]
 for i in range(len(m1)):
-   for j in range(len(m2[0])):
-       for k in range(len(m2)):
-           m3[i][j]+=m1[i][k]+m2[k][j]
+    m_yeni=list()
+    for j in range(len(m2[0])):
+        for k in range(len(m2[0])):
+            m1_sayı=m1[i][k]
+            m2_sayi=m2[k][j]
+            çarpım += (m1_sayı * m2_sayi)
+    m_yeni.append(çarpım)
 
-for s in m3:
+    m.append(m_yeni)
+for s in çarpım:
     print(s)
+
+# m3.append(m3[i][j]+(m1[i][k]*m2[k][j]))
