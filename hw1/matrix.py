@@ -29,7 +29,7 @@ line2=int(input("Lütfen 2.matrisin satır sayısını giriniz:"))
 column2=int(input("Lütfen 2.matrisin sütun sayısını giriniz:"))
 
 if column1 != line2:
-    print ("1.matrisin sütun sayısı ile 2.matrisin satır sayısı eşit olamaz!")
+    print ("1.matrisin sütun sayısı ile 2.matrisin satır sayısı eşit olmalı")
 for i in range (line1):
     matrix1 += [[" "]*column1]
 for i in range(line2):
