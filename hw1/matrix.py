@@ -41,13 +41,15 @@ for t in  matrix2:
     print(t)
 
 for i in range(line1):
-     sayi = input("1. matrisin satır elemanını giriniz.")
-     matrix1[i] = sayi
-for s in matrix1:
-    print(s)
-# for j in range(column1+1):
-#     sayi2=input("1. matrisin sütun elemanını giriniz.")
-#     matrix1[j]=sayi2
+    for j in range(column1):
+        sayi = int(input("1.matrisin satır ve sütn elemanlarını giriniz."))
+        matrix1[i][j] = sayi
+for i in matrix1:
+    print(i)
+for i in range(line2):
+    for j in range(column2):
+        sayi = int(input("2.matrisin satır ve sütn elemanlarını giriniz."))
+        matrix2[i][j] = sayi
 
 
 
