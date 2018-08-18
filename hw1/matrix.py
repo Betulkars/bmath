@@ -5,23 +5,13 @@
 #      [6, 7, 3, 0],
 #      [4, 5, 9, 1]]
 # m3=[]
-# for i in range(len(m1)):
-#     pivot=[]
-#     for j in range(len(m2[0])):
-#         toplam=0
-#         for k in range(len(m2)):
-#             toplam+=m1[i][k]*m2[k][j]
-#         pivot.append(toplam)
-#     m3.append(pivot)
-# print(m3)
-
 line1=0
 column1=0
 line2=0
 column2=0
 matrix1=[]
 matrix2=[]
-
+sonuç=[]
 line1=int(input("Lütfen 1.matrisin satır sayısını giriniz:"))
 column1=int(input("Lütfen 1.matrisin sütun sayısını giriniz:"))
 
@@ -41,13 +31,26 @@ for t in  matrix2:
     print(t)
 
 for i in range(line1):
-     sayi = input("1. matrisin satır elemanını giriniz.")
-     matrix1[i] = sayi
-for s in matrix1:
-    print(s)
-# for j in range(column1+1):
-#     sayi2=input("1. matrisin sütun elemanını giriniz.")
-#     matrix1[j]=sayi2
+    for j in range(column1):
+        sayi = int(input("1.matrisin satır ve sütn elemanlarını giriniz."))
+        matrix1[i][j] = sayi
+for i in matrix1:
+    print(i)
+for i in range(line2):
+    for j in range(column2):
+        sayi = int(input("2.matrisin satır ve sütn elemanlarını giriniz."))
+        matrix2[i][j] = sayi
+for i in range(line1):
+  pivot=[]
+  for j in range(column2):
+        toplam=0
+        for k in range(line2):
+            toplam+=matrix1[i][k]*matrix2[k][j]
+        pivot.append(toplam)
+  sonuç.append(pivot)
+print(sonuç)
+
+
 
 
 
